@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6EFFD480-B8A7-4D91-895F-612A1BC3117B}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Xen2DAndroid</RootNamespace>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AssemblyName>Xen2D-Android</AssemblyName>
+    <ReleaseVersion>1.0</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;ANDROID</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <DefineConstants>ANDROID</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'TestFlight|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>ANDROID</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Marketplace|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>ANDROID</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="MatrixEx.cs" />
+    <Compile Include="Collision\CollidableObject.cs" />
+    <Compile Include="Collision\CollidableObjectComparer.cs" />
+    <Compile Include="Collision\CollisionChecker.cs" />
+    <Compile Include="Collision\CollisionClasses.cs" />
+    <Compile Include="Collision\CollisionDetector.cs" />
+    <Compile Include="Collision\CollisionEvent.cs" />
+    <Compile Include="Collision\CollisionInteractionType.cs" />
+    <Compile Include="Collision\CollisionLifetimeEntry.cs" />
+    <Compile Include="Collision\CollisionLifetimeTracker.cs" />
+    <Compile Include="Collision\CollisionRuleEntry.cs" />
+    <Compile Include="Collision\CollisionRuleSet.cs" />
+    <Compile Include="Collision\CollisionRuleSetAll.cs" />
+    <Compile Include="Collision\ExtentIntersector.cs" />
+    <Compile Include="Collision\ICollisionDetector.cs" />
+    <Compile Include="Collision\ICollisionRuleSet.cs" />
+    <Compile Include="Collision\SweepAndPruneCollisionDetector.cs" />
+    <Compile Include="Core\ContentIdentifierAttribute.cs" />
+    <Compile Include="Core\Globals.cs" />
+    <Compile Include="Core\IDrawable2D.cs" />
+    <Compile Include="Core\IRenderable.cs" />
+    <Compile Include="Core\IUpdateableEx.cs" />
+    <Compile Include="Core\Interpolator.cs" />
+    <Compile Include="Core\MatrixUtility.cs" />
+    <Compile Include="Core\ScreenUtility.cs" />
+    <Compile Include="Core\SongCache.cs" />
+    <Compile Include="Core\SortedRenderable2DCollection.cs" />
+    <Compile Include="Core\SoundEffectCache.cs" />
+    <Compile Include="Core\SpriteFontCache.cs" />
+    <Compile Include="Core\TextureCache.cs" />
+    <Compile Include="Core\TextureInfoCache.cs" />
+    <Compile Include="Core\TextureSizeAttribute.cs" />
+    <Compile Include="Core\VectorUtility.cs" />
+    <Compile Include="Core\Viewport.cs" />
+    <Compile Include="Core\Viewport2D.cs" />
+    <Compile Include="Core\XenCache.cs" />
+    <Compile Include="Core\XenMath.cs" />
+    <Compile Include="Primitives\CircularExtent.cs" />
+    <Compile Include="Primitives\Component2D.cs" />
+    <Compile Include="Primitives\CompositeExtent.cs" />
+    <Compile Include="Primitives\CompositeRenderable2DBase.cs" />
+    <Compile Include="Primitives\ExtentBase.cs" />
+    <Compile Include="Primitives\ICircularExtent.cs" />
+    <Compile Include="Primitives\IExtent.cs" />
+    <Compile Include="Primitives\IPolygonExtent.cs" />
+    <Compile Include="Primitives\IRectangle.cs" />
+    <Compile Include="Primitives\IRectangularExtent.cs" />
+    <Compile Include="Primitives\IShape.cs" />
+    <Compile Include="Primitives\PlaceholderRenderable2DBase.cs" />
+    <Compile Include="Primitives\PolygonExtent.cs" />
+    <Compile Include="Primitives\PositionTimeEntry2D.cs" />
+    <Compile Include="Primitives\PositionTimeHistory2D.cs" />
+    <Compile Include="Primitives\RectangularExtent.cs" />
+    <Compile Include="Primitives\Renderable2DBase.cs" />
+    <Compile Include="Primitives\RenderableBase.cs" />
+    <Compile Include="Primitives\ShapeCircle.cs" />
+    <Compile Include="Primitives\ShapeComplexPolygon.cs" />
+    <Compile Include="Primitives\ShapePolygon.cs" />
+    <Compile Include="Primitives\ShapePolygon2DBase.cs" />
+    <Compile Include="Primitives\ShapeUtility.cs" />
+    <Compile Include="Primitives\Space2DTranslation.cs" />
+    <Compile Include="Primitives\VectorRectangle.cs" />
+    <Compile Include="Sprites\AnimatedSprite.cs" />
+    <Compile Include="Sprites\AnimationStripDescriptor.cs" />
+    <Compile Include="Sprites\AssetDescriptor.cs" />
+    <Compile Include="Sprites\BasicLine2D.cs" />
+    <Compile Include="Sprites\CachedTextureDescriptor.cs" />
+    <Compile Include="Sprites\CompositeSprite.cs" />
+    <Compile Include="Sprites\I2DDisplayModifiers.cs" />
+    <Compile Include="Sprites\IAnimatedSprite.cs" />
+    <Compile Include="Sprites\ISprite.cs" />
+    <Compile Include="Sprites\ITextureInfo.cs" />
+    <Compile Include="Sprites\RenderMode.cs" />
+    <Compile Include="Sprites\SinglePixel.cs" />
+    <Compile Include="Sprites\Sprite2D.cs" />
+    <Compile Include="Sprites\SpriteBatchEx.cs" />
+    <Compile Include="Sprites\SpriteDisplayAttributes.cs" />
+    <Compile Include="Sprites\StaticSprite.cs" />
+    <Compile Include="Text\XenString.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Collision\" />
+    <Folder Include="Core\" />
+    <Folder Include="Primitives\" />
+    <Folder Include="Sprites\" />
+    <Folder Include="Text\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ExEnAndroid\ExEnAndroid.csproj">
+      <Project>{408B170B-BAFC-4638-9211-E59125830E2E}</Project>
+      <Name>ExEnAndroid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExEnCore\ExEnCore Android.csproj">
+      <Project>{6622CF5F-D0D3-4154-A426-D334799ADC0E}</Project>
+      <Name>ExEnCore Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XenAspects\XenAspects-Android.csproj">
+      <Project>{4F3886B4-0A5F-4BA2-85FE-75F9957A090B}</Project>
+      <Name>XenAspects-Android</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

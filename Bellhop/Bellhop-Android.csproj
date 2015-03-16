@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{123E8B30-5428-4D88-B9D4-C82E14B3DBA6}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Jubble</RootNamespace>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AssemblyName>Sharpslinger</AssemblyName>
+    <TargetFrameworkVersion>v4.0.3</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <ReleaseVersion>1.0</ReleaseVersion>
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG; ANDROID</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <DefineConstants>ANDROID</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'TestFlight|AnyCPU' ">
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>ANDROID; TESTFLIGHT</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Marketplace|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>ANDROID; MARKETPLACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AndroidLinkMode>Full</AndroidLinkMode>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="OpenTK-1.0" />
+    <Reference Include="GooglePlayServicesLib">
+      <HintPath>..\Components\googleplayservices-15.0.1\lib\android\GooglePlayServicesLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\Components\googleplayservices-15.0.1\lib\android\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat">
+      <HintPath>..\Components\googleplayservices-15.0.1\lib\android\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.MediaRouter">
+      <HintPath>..\Components\googleplayservices-15.0.1\lib\android\Xamarin.Android.Support.v7.MediaRouter.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GameLog.cs" />
+    <Compile Include="GameSettings.cs" />
+    <Compile Include="GameUtils.cs" />
+    <Compile Include="MainGame.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Particles\CustomParticleSystems.cs" />
+    <Compile Include="Particles\ParticleManager.cs" />
+    <Compile Include="Particles\ParticleSystem.cs" />
+    <Compile Include="MainActivity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Game.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\ExEnAndroid\ExEnAndroid.csproj">
+      <Project>{408B170B-BAFC-4638-9211-E59125830E2E}</Project>
+      <Name>ExEnAndroid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExEnCore\ExEnCore Android.csproj">
+      <Project>{6622CF5F-D0D3-4154-A426-D334799ADC0E}</Project>
+      <Name>ExEnCore Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xen2D\Xen2D-Android.csproj">
+      <Project>{6EFFD480-B8A7-4D91-895F-612A1BC3117B}</Project>
+      <Name>Xen2D-Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XenAspects\XenAspects-Android.csproj">
+      <Project>{4F3886B4-0A5F-4BA2-85FE-75F9957A090B}</Project>
+      <Name>XenAspects-Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DuckyEngine\DuckyEngine-Android.csproj">
+      <Project>{1F6FF2E4-FA53-43AB-8D35-94EDA1A97408}</Project>
+      <Name>DuckyEngine-Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xamarin.Facebook\Xamarin.Facebook.csproj">
+      <Project>{33B8DF4F-E480-4B97-8DA1-BEB89CA6B644}</Project>
+      <Name>Xamarin.Facebook</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AndroidAsset Include="Content\GameplayWidescreen.xml" />
+    <AndroidAsset Include="Content\Music\music.mp3" />
+    <AndroidAsset Include="Content\Fonts\BPdots-exenfont.exenfont" />
+    <AndroidAsset Include="Content\Fonts\BPdots-exenfont.png" />
+    <AndroidAsset Include="Content\Fonts\BPdotsLarge-exenfont.exenfont" />
+    <AndroidAsset Include="Content\Fonts\BPdotsLarge-exenfont.png" />
+    <AndroidAsset Include="Content\Fonts\BPdots-exenfont%402x.exenfont" />
+    <AndroidAsset Include="Content\Fonts\BPdots-exenfont%402x.png" />
+    <AndroidAsset Include="Content\Fonts\BPdotsLarge-exenfont%402x.exenfont" />
+    <AndroidAsset Include="Content\Fonts\BPdotsLarge-exenfont%402x.png" />
+    <AndroidAsset Include="Content\Sounds\explosion.wav" />
+    <AndroidAsset Include="Content\Textures\bg.png" />
+    <AndroidAsset Include="Content\Textures\bg%402x.png" />
+    <AndroidAsset Include="Content\Textures\particle.png" />
+    <AndroidAsset Include="Content\Textures\particle%402x.png" />
+    <AndroidAsset Include="Content\Gameplay.xml" />
+    <AndroidAsset Include="Content\Textures\target.png" />
+    <AndroidAsset Include="Content\Textures\target%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\Music\" />
+    <Folder Include="Content\Sounds\" />
+    <Folder Include="Content\Textures\" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="googleplayservices">
+      <Version>15.0.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+</Project>

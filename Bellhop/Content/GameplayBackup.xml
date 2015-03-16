@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DuckyScene SwipeThreshold="25.0">
+  <Page Name="Main">
+    <Element Name="ParticleFXLayer" Type="Text" Font="Fonts/Edmunds" X="0" Y="88" Scale="1.0" R="0" G="0" B="0"></Element>
+
+    <Element Name="ReadyText" Type="Text" Font="Fonts/Edmunds" X="150" Y="100" Scale="1.0" R="0" G="0" B="0" Visible="false"></Element>
+    <Element Name="ReadyBG" Type="Image" X="-38" Y="0" Scale="1.0" Visible="false" Enabled="false">Textures/bg</Element>
+    
+    <Element Name="RoundText" Type="Text" Font="Fonts/Edmunds" X="150" Y="100" Scale="1.0" R="0" G="0" B="0" Visible="false"></Element>
+    <Element Name="RoundScoreText" Type="Text" Font="Fonts/Edmunds" X="150" Y="150" Scale="1.0" R="0" G="0" B="0" Visible="false"></Element>
+    <Element Name="RoundBG" Type="Image" X="-44" Y="0" Scale="1.0" Visible="false" Enabled="false">Textures/postRoundReport</Element>
+
+    <Element Name="ScoreP1NameText" Type="Text" Font="Fonts/Edmunds" X="0" Y="150" Scale="0.8" R="255" G="195" B="0" Visible="false"></Element>
+    <Element Name="ScoreP2NameText" Type="Text" Font="Fonts/Edmunds" X="406" Y="150" Scale="0.8" R="255" G="195" B="0" Visible="false"></Element>
+    <Element Name="ScoreP1R1Text" Type="Text" Font="Fonts/Edmunds" X="106" Y="98" Scale="0.8" R="0" G="148" B="255" Visible="false"></Element>
+    <Element Name="ScoreP2R1Text" Type="Text" Font="Fonts/Edmunds" X="336" Y="98" Scale="0.8" R="255" G="119" B="0" Visible="false"></Element>
+    <Element Name="ScoreP1R2Text" Type="Text" Font="Fonts/Edmunds" X="106" Y="163" Scale="0.8" R="0" G="148" B="255" Visible="false"></Element>
+    <Element Name="ScoreP2R2Text" Type="Text" Font="Fonts/Edmunds" X="336" Y="163" Scale="0.8" R="255" G="119" B="0" Visible="false"></Element>
+    <Element Name="ScoreP1R3Text" Type="Text" Font="Fonts/Edmunds" X="106" Y="228" Scale="0.8" R="0" G="148" B="255" Visible="false"></Element>
+    <Element Name="ScoreP2R3Text" Type="Text" Font="Fonts/Edmunds" X="336" Y="228" Scale="0.8" R="255" G="119" B="0" Visible="false"></Element>
+    <Element Name="ScoreP1TotalText" Type="Text" Font="Fonts/Edmunds" X="106" Y="270" Scale="1.0" R="0" G="148" B="255" Visible="false"></Element>
+    <Element Name="ScoreP2TotalText" Type="Text" Font="Fonts/Edmunds" X="326" Y="270" Scale="1.0" R="255" G="119" B="0" Visible="false"></Element>
+    <Element Name="ScorePlay" Type="Image" X="380" Y="225" Scale="1.0" Visible="false" Enabled="false">Textures/scorePlay</Element>
+    <Element Name="ScoreResign" Type="Image" X="0" Y="225" Scale="1.0" Visible="false" Enabled="false">Textures/scoreResign</Element>
+    <Element Name="ScoreBG" Type="Image" X="-44" Y="0" Scale="1.0" Visible="false" Enabled="false">Textures/scorebg</Element>
+
+    <Element Name="StartShowdown" Type="Image" X="0" Y="77" Scale="1.0">Textures/startShowdown</Element>
+    <Element Name="StartBG" Type="Image" X="-44" Y="0" Scale="1.0" R="255" G="255" B="255">Textures/bgMainMenu</Element>
+
+    <Element Name="BonusScore" Type="Text" Font="Fonts/Edmunds" X="100" Y="10" Scale="1.0" R="0" G="0" B="255" Visible="false">Bonus:</Element>
+    <Element Name="HighScore" Type="Text" Font="Fonts/Edmunds" X="250" Y="10" Scale="1.0" R="0" G="0" B="0">Time:</Element>
+
+    <Element Name="TargetBad" Type="Particle" Scale="1.0">Textures/targetBad</Element>
+    <Element Name="Target" Type="Particle" Scale="1.0">Textures/target</Element>
+    <Element Name="Target0" Type="Particle" Scale="1.0">Textures/target0</Element>
+    <Element Name="Target1" Type="Particle" Scale="1.0">Textures/target1</Element>
+    <Element Name="Target2" Type="Particle" Scale="1.0">Textures/target2</Element>
+    <Element Name="Target3" Type="Particle" Scale="1.0">Textures/target3</Element>
+    <Element Name="Target4" Type="Particle" Scale="1.0">Textures/target4</Element>
+    <Element Name="Target5" Type="Particle" Scale="1.0">Textures/target5</Element>
+    <Element Name="Target6" Type="Particle" Scale="1.0">Textures/target6</Element>
+    <Element Name="Tumbleweed" Type="Image" X="-64" Y="256" OriginX="32" OriginY="32" Scale="1.0">Textures/tumbleweed</Element>
+
+    <Element Name="Background" Type="Image" X="-38" Y="0" Scale="1.0">Textures/bg</Element>
+    <Element Name="BackgroundSunrise" Type="Image" X="-38" Y="0" Scale="1.0">Textures/bgSunrise</Element>
+    <Element Name="BackgroundNoon" Type="Image" X="-38" Y="0" Scale="1.0">Textures/bgNoon</Element>
+    <Element Name="BackgroundSunset" Type="Image" X="-38" Y="0" Scale="1.0">Textures/bgSunset</Element>
+  </Page>
+</DuckyScene>

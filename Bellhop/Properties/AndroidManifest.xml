@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.munomic.tapslinger.app" android:versionCode="1" android:versionName="1.0">
+	<uses-sdk android:minSdkVersion="15" android:targetSdkVersion="19" />
+	<application android:icon="@drawable/icon" android:label="Tapslinger">
+		<meta-data android:name="com.google.android.gms.games.APP_ID" android:value="@string/app_id" />
+		<meta-data android:name="com.google.android.backup.api_key" android:value="AEdPqrEAAAAI1T8zNwSivrDjhpiHpHBydLJrU-jra32To50QbQ" />
+		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+		<activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+	</application>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+</manifest>

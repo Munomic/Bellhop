@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DuckyScene SwipeThreshold="25.0">
+  <Page Name="Main">
+    <Element Name="Roof" Type="Image" X="0" Y="0" Scale="1.0">Textures/roof</Element>
+    <Element Name="Elevator" Type="Group" X="102" Y="0" >
+      <Element Name="ElevatorLight" Type="Image" X="0" Y="0" Scale="1.0">Textures/elevatorLight</Element>
+      <Element Name="Bellhop" Type="Image" X="8" Y="14" Scale="1.0">Textures/bellhop</Element>
+      <Element Name="Elevator1" Type="Image" X="0" Y="0" Scale="1.0" Visible="false">Textures/elevator1</Element>
+      <Element Name="Elevator5" Type="Image" X="0" Y="0" Scale="1.0">Textures/elevator5</Element>
+    </Element>
+    <Element Name="ElevatorF1" Type="Group" X="106" Y="104" >
+      <Element Name="On" Type="Image" X="0" Y="0" Scale="1.0" Visible="false">Textures/floor1buttonOn</Element>
+      <Element Name="In" Type="Image" X="0" Y="0" Scale="1.0" Visible="false">Textures/floor1buttonIn</Element>
+      <Element Name="Off" Type="Image" X="0" Y="0" Scale="1.0">Textures/floor1buttonOff</Element>
+    </Element>
+    <Element Name="ElevatorF2" Type="Group" X="106" Y="72" >
+      <Element Name="On" Type="Image" X="0" Y="0" Scale="1.0" Visible="false">Textures/floor2buttonOn</Element>
+      <Element Name="In" Type="Image" X="0" Y="0" Scale="1.0" Visible="false">Textures/floor2buttonIn</Element>
+      <Element Name="Off" Type="Image" X="0" Y="0" Scale="1.0">Textures/floor2buttonOff</Element>
+    </Element>
+    <Element Name="ElevatorF3" Type="Group" X="106" Y="41" >
+      <Element Name="On" Type="Image" X="0" Y="0" Scale="1.0" Visible="false">Textures/floor3buttonOn</Element>
+      <Element Name="In" Type="Image" X="0" Y="0" Scale="1.0" Visible="false">Textures/floor3buttonIn</Element>
+      <Element Name="Off" Type="Image" X="0" Y="0" Scale="1.0">Textures/floor3buttonOff</Element>
+    </Element>
+    <Element Name="ElevatorF4" Type="Group" X="106" Y="9" >
+      <Element Name="On" Type="Image" X="0" Y="0" Scale="1.0" Visible="false">Textures/floor4buttonOn</Element>
+      <Element Name="In" Type="Image" X="0" Y="0" Scale="1.0" Visible="false">Textures/floor4buttonIn</Element>
+      <Element Name="Off" Type="Image" X="0" Y="0" Scale="1.0">Textures/floor4buttonOff</Element>
+    </Element>
+    <Element Name="ElevatorTop" Type="Image" X="106" Y="0" Scale="1.0">Textures/elevatorTop</Element>
+    <Element Name="ShaftF1" Type="Group" X="100" Y="101" >
+      <Element Name="a1" Type="Image" X="0" Y="0" Scale="1.0">Textures/floor1shaft1</Element>
+      <Element Name="a2" Type="Image" X="0" Y="0" Scale="1.0" Visible="false">Textures/floor1shaft2</Element>
+      <Element Name="a3" Type="Image" X="0" Y="0" Scale="1.0" Visible="false">Textures/floor1shaft3</Element>
+      <Element Name="a4" Type="Image" X="0" Y="0" Scale="1.0" Visible="false">Textures/floor1shaft4</Element>
+      <Element Name="a5" Type="Image" X="0" Y="0" Scale="1.0" Visible="false">Textures/floor1shaft5</Element>
+      <Element Name="a6" Type="Image" X="0" Y="0" Scale="1.0" Visible="false">Textures/floor1shaft6</Element>
+    </Element>
+    <Element Name="ShaftF2" Type="Group" X="100" Y="69" >
+      <Element Name="a1" Type="Image" X="0" Y="0" Scale="1.0">Textures/floor2shaft1</Element>
+      <Element Name="a2" Type="Image" X="0" Y="0" Scale="1.0" Visible="false">Textures/floor2shaft2</Element>
+      <Element Name="a3" Type="Image" X="0" Y="0" Scale="1.0" Visible="false">Textures/floor2shaft3</Element>
+      <Element Name="a4" Type="Image" X="0" Y="0" Scale="1.0" Visible="false">Textures/floor2shaft4</Element>
+      <Element Name="a5" Type="Image" X="0" Y="0" Scale="1.0" Visible="false">Textures/floor2shaft5</Element>
+      <Element Name="a6" Type="Image" X="0" Y="0" Scale="1.0" Visible="false">Textures/floor2shaft6</Element>
+    </Element>
+    <Element Name="ShaftF3" Type="Group" X="100" Y="37" >
+      <Element Name="a1" Type="Image" X="0" Y="0" Scale="1.0">Textures/floor3shaft1</Element>
+      <Element Name="a2" Type="Image" X="0" Y="0" Scale="1.0" Visible="false">Textures/floor3shaft2</Element>
+      <Element Name="a3" Type="Image" X="0" Y="0" Scale="1.0" Visible="false">Textures/floor3shaft3</Element>
+      <Element Name="a4" Type="Image" X="0" Y="0" Scale="1.0" Visible="false">Textures/floor3shaft4</Element>
+      <Element Name="a5" Type="Image" X="0" Y="0" Scale="1.0" Visible="false">Textures/floor3shaft5</Element>
+      <Element Name="a6" Type="Image" X="0" Y="0" Scale="1.0" Visible="false">Textures/floor3shaft6</Element>
+    </Element>
+    <Element Name="ShaftF4" Type="Group" X="100" Y="0" >
+      <Element Name="a1" Type="Image" X="0" Y="0" Scale="1.0">Textures/floor4shaft1</Element>
+      <Element Name="a2" Type="Image" X="0" Y="0" Scale="1.0" Visible="false">Textures/floor4shaft2</Element>
+      <Element Name="a3" Type="Image" X="0" Y="0" Scale="1.0" Visible="false">Textures/floor4shaft3</Element>
+      <Element Name="a4" Type="Image" X="0" Y="0" Scale="1.0" Visible="false">Textures/floor4shaft4</Element>
+      <Element Name="a5" Type="Image" X="0" Y="0" Scale="1.0" Visible="false">Textures/floor4shaft5</Element>
+      <Element Name="a6" Type="Image" X="0" Y="0" Scale="1.0" Visible="false">Textures/floor4shaft6</Element>
+    </Element>
+    <Element Name="Background" Type="Image" X="0" Y="0" Scale="1.0">Textures/bg</Element>
+  </Page>
+</DuckyScene>

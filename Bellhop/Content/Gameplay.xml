@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DuckyScene SwipeThreshold="25.0">
+  <Page Name="Main">
+    <Element Name="Roof" Type="Image" X="-38" Y="0" Scale="1.0">Textures/roof</Element>
+    <Element Name="Elevator" Type="Group" X="204" Y="0" >
+      <Element Name="ElevatorLight" Type="Image" X="0" Y="0" Scale="1.0">Textures/elevatorLight</Element>
+      <Element Name="Bellhop" Type="Image" X="17" Y="30" Scale="1.0">Textures/bellhop</Element>
+      <Element Name="ElevatorClosed" Type="Image" X="0" Y="0" Scale="1.0">Textures/elevatorClosed</Element>
+      <Element Name="ElevatorOpen" Type="Image" X="0" Y="0" Scale="1.0">Textures/elevator</Element>
+    </Element>
+    <Element Name="ElevatorTop" Type="Image" X="204" Y="0" Scale="1.0">Textures/elevatorTop</Element>
+    <Element Name="Background" Type="Image" X="-38" Y="0" Scale="1.0">Textures/bg</Element>
+  </Page>
+</DuckyScene>

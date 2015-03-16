@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DuckyScene SwipeThreshold="25.0">
+  <Page Name="Main">
+    <Element Name="Title" Type="Text" Font="Fonts/Vanilla" X="80" Y="50" Scale="1.0">Guess A Letter!</Element>
+    <Element Name="Word" Type="Text" Font="Fonts/Vanilla" X="80" Y="200" Scale="1.0">_</Element>
+    <Element Name="Goal" Type="Image" X="420" Y="0" Scale="0.4">Textures/waypoint</Element>
+    <Element Name="Ducky" Type="Image" X="-40" Y="55" Angle="-90" Scale="0.5">Textures/shark</Element>
+    <Element Name="Shark" Type="Image" X="160" Y="0" Angle="90" Scale="0.5">Skins/duckerRubby</Element>
+    
+    <Element Name="LeftA" Type="Image" X="80" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/A</Element>
+    <Element Name="LeftB" Type="Image" X="80" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/B</Element>
+    <Element Name="LeftC" Type="Image" X="80" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/C</Element>
+    <Element Name="LeftD" Type="Image" X="80" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/D</Element>
+    <Element Name="LeftE" Type="Image" X="80" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/E</Element>
+    <Element Name="LeftF" Type="Image" X="80" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/F</Element>
+    <Element Name="LeftG" Type="Image" X="80" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/G</Element>
+    <Element Name="LeftH" Type="Image" X="80" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/H</Element>
+    <Element Name="LeftI" Type="Image" X="80" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/I</Element>
+    <Element Name="LeftJ" Type="Image" X="80" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/J</Element>
+    <Element Name="LeftK" Type="Image" X="80" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/K</Element>
+    <Element Name="LeftL" Type="Image" X="80" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/L</Element>
+    <Element Name="LeftM" Type="Image" X="80" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/M</Element>
+    <Element Name="LeftN" Type="Image" X="80" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/N</Element>
+    <Element Name="LeftO" Type="Image" X="80" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/O</Element>
+    <Element Name="LeftP" Type="Image" X="80" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/P</Element>
+    <Element Name="LeftQ" Type="Image" X="80" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/Q</Element>
+    <Element Name="LeftR" Type="Image" X="80" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/R</Element>
+    <Element Name="LeftS" Type="Image" X="80" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/S</Element>
+    <Element Name="LeftT" Type="Image" X="80" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/T</Element>
+    <Element Name="LeftU" Type="Image" X="80" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/U</Element>
+    <Element Name="LeftV" Type="Image" X="80" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/V</Element>
+    <Element Name="LeftW" Type="Image" X="80" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/W</Element>
+    <Element Name="LeftX" Type="Image" X="80" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/X</Element>
+    <Element Name="LeftY" Type="Image" X="80" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/Y</Element>
+    <Element Name="LeftZ" Type="Image" X="80" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/Z</Element>
+
+    <Element Name="MiddleA" Type="Image" X="190" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/A</Element>
+    <Element Name="MiddleB" Type="Image" X="190" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/B</Element>
+    <Element Name="MiddleC" Type="Image" X="190" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/C</Element>
+    <Element Name="MiddleD" Type="Image" X="190" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/D</Element>
+    <Element Name="MiddleE" Type="Image" X="190" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/E</Element>
+    <Element Name="MiddleF" Type="Image" X="190" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/F</Element>
+    <Element Name="MiddleG" Type="Image" X="190" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/G</Element>
+    <Element Name="MiddleH" Type="Image" X="190" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/H</Element>
+    <Element Name="MiddleI" Type="Image" X="190" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/I</Element>
+    <Element Name="MiddleJ" Type="Image" X="190" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/J</Element>
+    <Element Name="MiddleK" Type="Image" X="190" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/K</Element>
+    <Element Name="MiddleL" Type="Image" X="190" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/L</Element>
+    <Element Name="MiddleM" Type="Image" X="190" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/M</Element>
+    <Element Name="MiddleN" Type="Image" X="190" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/N</Element>
+    <Element Name="MiddleO" Type="Image" X="190" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/O</Element>
+    <Element Name="MiddleP" Type="Image" X="190" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/P</Element>
+    <Element Name="MiddleQ" Type="Image" X="190" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/Q</Element>
+    <Element Name="MiddleR" Type="Image" X="190" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/R</Element>
+    <Element Name="MiddleS" Type="Image" X="190" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/S</Element>
+    <Element Name="MiddleT" Type="Image" X="190" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/T</Element>
+    <Element Name="MiddleU" Type="Image" X="190" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/U</Element>
+    <Element Name="MiddleV" Type="Image" X="190" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/V</Element>
+    <Element Name="MiddleW" Type="Image" X="190" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/W</Element>
+    <Element Name="MiddleX" Type="Image" X="190" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/X</Element>
+    <Element Name="MiddleY" Type="Image" X="190" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/Y</Element>
+    <Element Name="MiddleZ" Type="Image" X="190" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/Z</Element>
+
+    <Element Name="RightA" Type="Image" X="300" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/A</Element>
+    <Element Name="RightB" Type="Image" X="300" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/B</Element>
+    <Element Name="RightC" Type="Image" X="300" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/C</Element>
+    <Element Name="RightD" Type="Image" X="300" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/D</Element>
+    <Element Name="RightE" Type="Image" X="300" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/E</Element>
+    <Element Name="RightF" Type="Image" X="300" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/F</Element>
+    <Element Name="RightG" Type="Image" X="300" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/G</Element>
+    <Element Name="RightH" Type="Image" X="300" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/H</Element>
+    <Element Name="RightI" Type="Image" X="300" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/I</Element>
+    <Element Name="RightJ" Type="Image" X="300" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/J</Element>
+    <Element Name="RightK" Type="Image" X="300" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/K</Element>
+    <Element Name="RightL" Type="Image" X="300" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/L</Element>
+    <Element Name="RightM" Type="Image" X="300" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/M</Element>
+    <Element Name="RightN" Type="Image" X="300" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/N</Element>
+    <Element Name="RightO" Type="Image" X="300" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/O</Element>
+    <Element Name="RightP" Type="Image" X="300" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/P</Element>
+    <Element Name="RightQ" Type="Image" X="300" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/Q</Element>
+    <Element Name="RightR" Type="Image" X="300" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/R</Element>
+    <Element Name="RightS" Type="Image" X="300" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/S</Element>
+    <Element Name="RightT" Type="Image" X="300" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/T</Element>
+    <Element Name="RightU" Type="Image" X="300" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/U</Element>
+    <Element Name="RightV" Type="Image" X="300" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/V</Element>
+    <Element Name="RightW" Type="Image" X="300" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/W</Element>
+    <Element Name="RightX" Type="Image" X="300" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/X</Element>
+    <Element Name="RightY" Type="Image" X="300" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/Y</Element>
+    <Element Name="RightZ" Type="Image" X="300" Y="100" Scale="1.0" Enabled="false" Visible="false">Letters/Z</Element>
+  </Page>
+  <Page Name="Page2">
+    <Element Name="BackButton" Type="Image" X="0" Y="0" Scale="1.0">Textures/duckyButton</Element>
+    <Element Type="Image" X="100" Y="0" Scale="1.0">Textures/fbButton</Element>
+  </Page>
+</DuckyScene>

@@ -1,0 +1,3 @@
+Tapslinger v1.0
+
+- Initial placeholder App Store submission version
