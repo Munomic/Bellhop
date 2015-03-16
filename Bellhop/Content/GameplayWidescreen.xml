@@ -6,6 +6,9 @@
       <Element Name="ElevatorLight" Type="Image" X="0" Y="0" Scale="1.0">Textures/elevatorLight</Element>
       <Element Name="Bellhop" Type="Image" X="8" Y="14" Scale="1.0">Textures/bellhop</Element>
       <Element Name="Elevator1" Type="Image" X="0" Y="0" Scale="1.0" Visible="false">Textures/elevator1</Element>
+      <Element Name="Elevator2" Type="Image" X="0" Y="0" Scale="1.0" Visible="false">Textures/elevator2</Element>
+      <Element Name="Elevator3" Type="Image" X="0" Y="0" Scale="1.0" Visible="false">Textures/elevator3</Element>
+      <Element Name="Elevator4" Type="Image" X="0" Y="0" Scale="1.0" Visible="false">Textures/elevator4</Element>
       <Element Name="Elevator5" Type="Image" X="0" Y="0" Scale="1.0">Textures/elevator5</Element>
     </Element>
     <Element Name="ElevatorF1" Type="Group" X="106" Y="104" >

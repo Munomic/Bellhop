@@ -1,0 +1,5 @@
+*.cachefile
+*/bin/*
+*/obj/*
+*.cache
+Bellhop/Content/Textures/Thumbs.db

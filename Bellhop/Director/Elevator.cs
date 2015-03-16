@@ -40,7 +40,7 @@ namespace Jubble
         {
             get
             {
-                return ( State == ElevatorState.Moving );
+                return ( State != ElevatorState.Moving );
             }
         }
 
@@ -63,7 +63,6 @@ namespace Jubble
             {
                 TimeToFloor = Speed;
                 TimeToCloseDoor = DoorSpeed;
-                TimeToOpenDoor = DoorSpeed;
                 TimeBeforeReady = 0.0f;
                 State = ElevatorState.Closing;
                 NextFloor = floor;

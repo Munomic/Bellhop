@@ -8,6 +8,33 @@ namespace Jubble
 {
     public class GameplayDirector : DuckySceneDirector
     {
+        public class Animation
+        {
+            float animProgress = 0.0f;
+            DuckyElement[] Frames;
+
+            public float Progress
+            {
+                get { return animProgress; }
+                set
+                {
+                    animProgress = value;
+                    // Figure out the frame to show
+                    int frame = (int)Math.Round( Interpolator.Linear( 0.0f, (float)( Frames.Length - 1 ), animProgress, 1.0f, false ) );
+                    for( int i = 0; i < Frames.Length; i++ )
+                    {
+                        Frames[ i ].Visible = ( i == frame );
+                    }
+                }
+            }
+
+            public Animation( params DuckyElement[] frames )
+            {
+                Frames = frames;
+                Progress = 0.0f;
+            }
+        }
+
         public class ElevatorButton
         {
             public bool IsOn = false;
@@ -59,6 +86,8 @@ namespace Jubble
         }
 
         Elevator Elevator = new Elevator( 5.0f, 0.5f, 4 );
+        Animation ElevatorDoor;
+        Animation[] Shafts = new Animation[ 4 ];
         ElevatorButton[] ElevatorButtons = new ElevatorButton[ 4 ];
         float[] FloorYPositions = new float[ 4 ];
         float currentElevatorY = 0.0f;
@@ -66,6 +95,28 @@ namespace Jubble
         public override void Initialize( DuckyScene scene )
         {
             base.Initialize( scene );
+
+            ElevatorDoor = new Animation(
+                ( (DuckyGroup)scene[ "Main" ][ "Elevator" ] )[ "Elevator1" ],
+                ( (DuckyGroup)scene[ "Main" ][ "Elevator" ] )[ "Elevator2" ],
+                ( (DuckyGroup)scene[ "Main" ][ "Elevator" ] )[ "Elevator3" ],
+                ( (DuckyGroup)scene[ "Main" ][ "Elevator" ] )[ "Elevator4" ],
+                ( (DuckyGroup)scene[ "Main" ][ "Elevator" ] )[ "Elevator5" ]
+                );
+            for( int i = 0; i < 4; i++ )
+            {
+                Shafts[ i ] = new Animation(
+                    ( (DuckyGroup)scene[ "Main" ][ "ShaftF" + ( i + 1 ) ] )[ "a1" ],
+                    ( (DuckyGroup)scene[ "Main" ][ "ShaftF" + ( i + 1 ) ] )[ "a2" ],
+                    ( (DuckyGroup)scene[ "Main" ][ "ShaftF" + ( i + 1 ) ] )[ "a3" ],
+                    ( (DuckyGroup)scene[ "Main" ][ "ShaftF" + ( i + 1 ) ] )[ "a4" ],
+                    ( (DuckyGroup)scene[ "Main" ][ "ShaftF" + ( i + 1 ) ] )[ "a5" ],
+                    ( (DuckyGroup)scene[ "Main" ][ "ShaftF" + ( i + 1 ) ] )[ "a5" ]
+                    );
+            }
+
+            ElevatorDoor.Progress = 1.0f; // Eleavtor should start open
+            Shafts[ Elevator.CurrentFloor ].Progress = 1.0f; // Current floor shaft should be open
 
             AttachEntityFromElement( "Main", "Elevator", DuckySceneEntityType.Actor, 1.0f, 1 );
             FloorYPositions[ 3 ] = -2.0f;
@@ -116,6 +167,17 @@ namespace Jubble
             }
             else
             {
+                switch( Elevator.State )
+                {
+                    case ElevatorState.Opening:
+                        ElevatorDoor.Progress = Interpolator.Linear( 1.0f, 0.0f, Elevator.TimeToOpenDoor, Elevator.DoorSpeed );
+                        Shafts[ Elevator.CurrentFloor ].Progress = Interpolator.Linear( 1.0f, 0.0f, Elevator.TimeToOpenDoor, Elevator.DoorSpeed );
+                        break;
+                    case ElevatorState.Closing:
+                        ElevatorDoor.Progress = Interpolator.Linear( 0.0f, 1.0f, Elevator.TimeToCloseDoor, Elevator.DoorSpeed );
+                        Shafts[ Elevator.CurrentFloor ].Progress = Interpolator.Linear( 0.0f, 1.0f, Elevator.TimeToCloseDoor, Elevator.DoorSpeed );
+                        break;
+                }
                 currentElevatorY = FloorYPositions[ Elevator.CurrentFloor ];
             }
             this[ "Elevator" ].Position = new Vector2( this[ "Elevator" ].Position.X, currentElevatorY );
