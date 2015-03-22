@@ -4,3 +4,4 @@
 *.cache
 Bellhop/Content/obj/*
 Bellhop/Content/Textures/Thumbs.db
+*.suo
